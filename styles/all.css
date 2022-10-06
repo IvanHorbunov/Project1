@@ -1,0 +1,125 @@
+body {
+    background: #fff;
+    color: #cacbcb;
+    font: 20px/24px Arial, sans-serif;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    color: #cacbcb;
+    text-decoration: none;
+}
+.nav-item:hover .nav-link,
+a:hover {
+    color: #fff;
+    background-color: #009fff;
+}
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.nav {
+    width: 768px;
+    margin: 0 auto;
+}
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    background-color: #303030;
+    border-bottom: 5px solid #009fff;
+    letter-spacing: 1px;
+}
+.nav-item {
+    position: relative;
+}
+.nav-link {
+    display: block;
+    padding: 30px 25px;
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out all;
+}
+.dropdown {
+    margin: 0;
+    padding: 5px 0 0;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #009fff;
+    width: 300px;
+    display: none;
+}
+.nav-item:hover .dropdown {
+    display: block;
+}
+.drop-item {
+    border: 2px solid #008df3;
+}
+.drop-item2 {
+    border-top: none;
+}
+.drop-link {
+    display: block;
+    padding: 30px 25px;
+    position: relative;
+    transition: 0.4s ease-in-out all;
+}
+.drop-link2::after {
+    content: '+';
+    position: absolute;
+    top: 30px;
+    right: 25px;
+}
+.drop-link:hover {
+    background-color: #00abff;
+}
+.dropdown2 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 91px;
+    left: 100%;
+    background-color: #009fff;
+    width: 300px;
+    display: none;
+}
+.dropdown2 .drop-item:first-child {
+    border-left: none;
+}
+.dropdown2 .drop-item:last-child {
+    width: 302px;
+    margin-left: -2px;
+}
+.drop-item2:hover .dropdown2 {
+    display: block;
+}
+.drop-item:hover .drop-link2 { 
+    color: #fff;
+    background-color: #00abff;
+}
+.dropdown3 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 5px;
+    left: 100%;
+    background-color: #009fff;
+    width: 300px;
+    display: none;
+}
+.drop-item3:hover .dropdown3 {
+    display: block;
+}
+.dropdown3 .drop-item {
+    border-left: none;
+}
